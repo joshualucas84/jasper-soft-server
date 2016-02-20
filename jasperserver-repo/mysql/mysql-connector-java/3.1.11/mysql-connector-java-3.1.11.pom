@@ -1,0 +1,13 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>3.1.11</version>
+  <packaging>jar</packaging>
+  <name>MySQL java connector</name>
+  <url>http://www.mysql.com</url>
+  <description>MySQL java connector</description>
+  <scm>
+    <connection>http://bugs.mysql.com/</connection>
+  </scm>
+</project>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="68" started-at="2016-02-20T01:45:36Z" finished-at="2016-02-20T01:45:37Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="68" started-at="2016-02-20T01:45:36Z" finished-at="2016-02-20T01:45:37Z">
+      <class name="com.jaspersoft.jasperserver.dto.reports.inputcontrols.ReportInputControlTest">
+        <test-method status="PASS" signature="setDataType_resetGenericResourceFields()[pri:0, instance:com.jaspersoft.jasperserver.dto.reports.inputcontrols.ReportInputControlTest@5cc125d9]" name="setDataType_resetGenericResourceFields" duration-ms="9" started-at="2016-02-19T19:45:37Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDataType_resetGenericResourceFields -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.reports.inputcontrols.ReportInputControlTest -->
+      <class name="com.jaspersoft.jasperserver.dto.resources.ClientReportUnitTest">
+        <test-method status="PASS" signature="testEquals()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientReportUnitTest@2fb212f0]" name="testEquals" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.resources.ClientReportUnitTest -->
+      <class name="com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="init" is-config="true" duration-ms="5" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="cloeableConstuctorClonesResources()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="cloeableConstuctorClonesResources" duration-ms="6" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloeableConstuctorClonesResources -->
+        <test-method status="PASS" signature="testEquals()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="testEquals" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="init" is-config="true" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testHashCode()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="testHashCode" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHashCode -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest@c9bf922]" name="init" is-config="true" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.resources.ClientCustomDataSourceTest -->
+      <class name="com.jaspersoft.jasperserver.dto.reports.ReportParameterTest">
+        <test-method status="PASS" signature="testEquals()[pri:0, instance:com.jaspersoft.jasperserver.dto.reports.ReportParameterTest@19d449fc]" name="testEquals" duration-ms="1" started-at="2016-02-19T19:45:37Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jaspersoft.jasperserver.dto.reports.ReportParameterTest@19d449fc]" name="setUp" is-config="true" duration-ms="0" started-at="2016-02-19T19:45:37Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHashCode()[pri:0, instance:com.jaspersoft.jasperserver.dto.reports.ReportParameterTest@19d449fc]" name="testHashCode" duration-ms="1" started-at="2016-02-19T19:45:37Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHashCode -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jaspersoft.jasperserver.dto.reports.ReportParameterTest@19d449fc]" name="setUp" is-config="true" duration-ms="0" started-at="2016-02-19T19:45:37Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.reports.ReportParameterTest -->
+      <class name="com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest@53f96306]" name="setUp" is-config="true" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testEquals()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest@53f96306]" name="testEquals" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEquals -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest@53f96306]" name="setUp" is-config="true" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testHashCode()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest@53f96306]" name="testHashCode" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHashCode -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.resources.ClientVirtualDataSourceTest -->
+      <class name="com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest">
+        <test-method status="PASS" signature="marshal()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="marshal" duration-ms="2" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marshal -->
+        <test-method status="PASS" signature="marshal_emtpyProducesEmpty()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="marshal_emtpyProducesEmpty" duration-ms="0" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marshal_emtpyProducesEmpty -->
+        <test-method status="PASS" signature="marshal_nullProducesNull()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="marshal_nullProducesNull" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- marshal_nullProducesNull -->
+        <test-method status="PASS" signature="unmarshal()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="unmarshal" duration-ms="1" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unmarshal -->
+        <test-method status="PASS" signature="unmarshal_emtpyProducesEmpty()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="unmarshal_emtpyProducesEmpty" duration-ms="2" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unmarshal_emtpyProducesEmpty -->
+        <test-method status="PASS" signature="unmarshal_nullProducesNull()[pri:0, instance:com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest@309e7e21]" name="unmarshal_nullProducesNull" duration-ms="9" started-at="2016-02-19T19:45:36Z" finished-at="2016-02-19T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unmarshal_nullProducesNull -->
+      </class> <!-- com.jaspersoft.jasperserver.dto.resources.FilesMapXmlAdapterTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

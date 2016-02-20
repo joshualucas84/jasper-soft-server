@@ -1,0 +1,94 @@
+/* ====================================================================
+ * BASE RULES
+ *
+ * Base rules are the defaults applied to element selectors, attribute
+ * selectors, pseudo-classes selectors, and child/sibling selectors.
+ *
+ * Typographic scale is 1.8
+ * ==================================================================== */
+
+body.jrs {
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size: 11px;
+	height: 100%;
+	width: 100%;
+}
+
+h1.jrs,
+h2.jrs,
+h3.jrs,
+h4.jrs,
+h5.jrs,
+h6.jrs {
+	font-weight: normal;
+	font-size: 1em;
+	}
+
+i.jrs {
+	font-style: normal;
+	}
+
+a.jrs {
+    cursor: pointer;
+}
+
+/* h1.jrs {font-size: 3.27em;} */	/* 36px / 11px */
+/* h2.jrs {font-size: 2.182em} */	/* 24px / 11px */
+/* h3.jrs {font-size: 1.818em} */	/* 20px / 11px */
+/* h4.jrs {font-size: 1.455em} */	/* 16px / 11px */
+/* h5.jrs {font-size: 1.091em} */	/* 12px / 11px */
+/* h6.jrs {font-size: 1em} */		/* 11px / 11px */
+
+p.jrs,
+textarea.jrs {
+	font-size:1em;
+	line-height:1.364;		/* 15px / 11px, unitless value */
+	}
+
+/* no input element added to the following 2 rules to prevent specificity issues */
+.jrs[type="email"],
+.jrs[type="number"],
+.jrs[type="password"],
+.jrs[type="search"],
+.jrs[type="text"] {
+    border: 1px solid #d6d6d6;
+	height: 2.545em;		/* 28px / 11px */
+	padding-right: .364em;	/* 4px / 11px */
+	padding-left: .364em;	/* 4px / 11px */
+	}
+
+.jrs[type="search"] {
+	border: 1px solid #d6d6d6;
+	height: 2.364em;		/* 26px / 11px */
+	padding-right: 2.909em;	/* 32px / 11px */
+	padding-left: .364em;	/* 4px / 11px */
+	}
+
+input.jrs[type="radio"],
+input.jrs[type="checkbox"] {
+	height: 1.364em;			/* 15px / 11px */
+	width: 1.364em;			/* 15px / 11px */
+	}
+
+textarea.jrs {
+	border: 1px solid #d6d6d6;
+	padding-right: .364em;	/* 4px / 11px */
+	padding-left: .364em;	/* 4px / 11px */
+	}
+
+button.jrs	{
+	background-color: transparent;
+	border: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0;
+	position:  relative;
+	vertical-align: top; /* prevents issues with buttons containing icons, value can be anything except "baseline" */
+	white-space: nowrap;
+	}
+
+div.jrs {position:relative}

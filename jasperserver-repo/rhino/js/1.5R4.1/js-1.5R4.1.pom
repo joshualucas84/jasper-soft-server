@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>rhino</groupId>
+  <artifactId>js</artifactId>
+  <version>1.5R4.1</version>
+</project>

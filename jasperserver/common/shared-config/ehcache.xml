@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="ehcache.xsd"
+        name="jasperserverCache" updateCheck="false">
+
+    <diskStore path="${ehcache.disk.store.dir}/main"/>
+
+
+        <defaultCache
+                maxElementsInMemory="10000"
+                eternal="false"
+                overflowToDisk="true"
+                timeToIdleSeconds="120"
+                timeToLiveSeconds="120"
+                diskPersistent="false"
+                diskExpiryThreadIntervalSeconds="120"/>
+
+        <cache name="report.job.acl"
+                maxElementsInMemory="1000"
+                eternal="false"
+                overflowToDisk="false"
+                timeToIdleSeconds="7200"
+                timeToLiveSeconds="172800"
+                diskPersistent="false"/>
+
+        <cache name="connection.descriptions"
+                maxElementsInMemory="10000"
+                eternal="false"
+                overflowToDisk="false"
+                timeToIdleSeconds="120"
+                timeToLiveSeconds="1200"
+                diskPersistent="false"/>
+
+
+
+    <!-- cache used by the object permission service -->
+    <cache name="attributeCache"
+           maxElementsInMemory="10000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToIdleSeconds="360000"
+           timeToLiveSeconds="720000"
+           diskPersistent="false">
+        <!-- Uncomment this section to allow distribution of this cache -->
+        <!--
+        <cacheEventListenerFactory
+            class="net.sf.ehcache.distribution.RMICacheReplicatorFactory"
+            properties="replicateAsynchronously=true, replicatePuts=false, replicateUpdates=true,replicateUpdatesViaCopy=false, replicateRemovals=true "/>
+        <bootstrapCacheLoaderFactory
+            class="net.sf.ehcache.distribution.RMIBootstrapCacheLoaderFactory"
+            properties="bootstrapAsynchronously=true, maximumChunkSizeBytes=5000000"/>
+        -->
+    </cache>
+
+</ehcache>

@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.olap4j</groupId>
+	<artifactId>olap4j-xmla</artifactId>
+    <version>1.1.0-JS-6</version>
+	<packaging>jar</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>org.olap4j</groupId>
+      <artifactId>olap4j</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.olap4j</groupId>
+      <artifactId>olap4j-xmla</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.olap4j</groupId>
+                  <artifactId>olap4j-xmla</artifactId>
+                  <!--<version>${jrs-version}</version>-->
+                  <version>1.1.0</version>
+                  <type>jar</type>
+                  <excludes>**/MetadataReader.class, **/XmlaOlap4jCube.class,**/XmlaOlap4jCube$1.class,
+                      **/XmlaOlap4jCube$CachingMetadataReader.class, **/XmlaOlap4jCube$DelegatingMetadataReader.class,
+                      **/XmlaOlap4jCube$RawMetadataReader.class, **/XmlaOlap4jCellSet.class,
+                      **/XmlaOlap4jCellSet$XmlaOlap4jSurpriseMember.class,
+                      **/XmlaOlap4jConcurrentMemoryCache.class, META-INF/**</excludes>
+                  <outputDirectory>target/classes</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

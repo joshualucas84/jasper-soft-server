@@ -1,0 +1,11 @@
+<ul class="m-Selectlist jrs" style="position: relative; top: {{- top}}px;">
+    {{ _.each(items, function(item) { }}
+        <li class="m-Selectlist-item jrs {{ if (item.selected) print(' is-selected'); }} {{ if (item.active) print(' is-hovered'); }}"
+            data-index="{{- item.index}}"
+            title="{{ print(item && item.label ? _.xssEscape(item.label) : '')}}">
+            <div class="m-Selectlist-item-wrapper jrs">
+                <a class="m-Selectlist-item-text jrs">{{ print(item && item.label ? _.xssEscape(item.label) : '')}}</a>
+            </div>
+        </li>
+    {{ }); }}
+</ul>

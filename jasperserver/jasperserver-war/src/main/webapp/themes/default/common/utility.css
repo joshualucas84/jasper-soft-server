@@ -1,0 +1,176 @@
+
+/* ====================================================================
+ * UTILITY STYLES 
+ *
+ * Utility styles are simple rules for common use cases. All utility
+ * styles must be prefixed with "u-"
+ * ==================================================================== */
+
+.u-strong.jrs {font-weight:bold;}
+
+
+/* -------------------------- */
+/*    PERCENT WIDTH VALUES    */
+/* -------------------------- */
+.u-width-01pc {width:1%}
+.u-width-02pc {width:2%}
+.u-width-03pc {width:3%}
+.u-width-04pc {width:4%}
+.u-width-05pc {width:5%}
+.u-width-06pc {width:6%}
+.u-width-07pc {width:7%}
+.u-width-08pc {width:8%}
+.u-width-09pc {width:9%}
+.u-width-10pc {width:10%}
+.u-width-14pc {width:14%}
+.u-width-15pc {width:15%}
+.u-width-20pc {width:20%}
+.u-width-25pc {width:25%}
+.u-width-30pc {width:30%}
+.u-width-35pc {width:35%}
+.u-width-40pc {width:40%}
+.u-width-45pc {width:45%}
+.u-width-50pc {width:50%}
+.u-width-55pc {width:55%}
+.u-width-60pc {width:60%}
+.u-width-65pc {width:65%}
+.u-width-70pc {width:70%}
+.u-width-75pc {width:75%}
+.u-width-80pc {width:80%}
+.u-width-85pc {width:85%}
+.u-width-90pc {width:90%}
+.u-width-95pc {width:95%}
+.u-width-100pc {width:100%}
+
+
+/* --------------------------------------------------- */
+/*  STATIC WIDTH VALUES BASED ON 11PX BASE FONT SIZE   */
+/* --------------------------------------------------- */
+.u-width-10px.jrs {width: 0.909em;}     /* 10px / 11px */
+.u-width-11px.jrs {width: 1em;}		    /* 11px / 11px */
+.u-width-20px.jrs {width: 1.818em;}		/* 11px / 11px */
+.u-width-22px.jrs {width: 2em;}		    /* 22px / 11px */
+.u-width-50px.jrs {width: 4.545em;}		/* 50px / 11px */
+.u-width-80px.jrs {width: 7.273em;}		/* 80px / 11px */
+.u-width-90px.jrs {width: 8.182em;}		/* 90px / 11px */
+.u-width-100px.jrs {width: 9.091em;}	/* 100px / 11px */
+.u-width-125px.jrs {width: 11.364em;}	/* 125px / 11px */
+.u-width-150px.jrs {width: 13.636em;}	/* 150px / 11px */
+.u-width-175px.jrs {width: 15.909em;}	/* 175px / 11px */
+.u-width-200px.jrs {width: 18.182em;}	/* 200px / 11px */
+.u-width-225px.jrs {width: 20.455em;}	/* 225px / 11px */
+.u-width-250px.jrs {width: 22.727em;}	/* 250px / 11px */
+.u-width-275px.jrs {width: 25em;}		/* 275px / 11px */
+.u-width-300px.jrs {width: 27.273em;}	/* 300px / 11px */
+.u-width-325px.jrs {width: 29.545em;}	/* 325px / 11px */
+.u-width-350px.jrs {width: 31.818em;}	/* 350px / 11px */
+.u-width-375px.jrs {width: 34.091em;}	/* 375px / 11px */
+.u-width-400px.jrs {width: 36.364em;}	/* 400px / 11px */
+.u-width-425px.jrs {width: 38.636em;}	/* 425px / 11px */
+.u-width-450px.jrs {width: 40.909em;}	/* 450px / 11px */
+.u-width-475px.jrs {width: 43.182em;}	/* 475px / 11px */
+.u-width-500px.jrs {width: 45.455em;}	/* 500px / 11px */
+.u-width-525px.jrs {width: 47.727em;}	/* 525px / 11px */
+.u-width-550px.jrs {width: 50em;}		/* 550px / 11px */
+.u-width-575px.jrs {width: 52.273em;}	/* 575px / 11px */
+.u-width-600px.jrs {width: 54.545em;}	/* 600px / 11px */
+.u-width-625px.jrs {width: 56.818em;}	/* 625px / 11px */
+.u-width-650px.jrs {width: 59.091em;}	/* 650px / 11px */
+.u-width-675px.jrs {width: 61.364em;}	/* 675px / 11px */
+.u-width-700px.jrs {width: 63.636em;}	/* 700px / 11px */
+
+
+/* --------------------------------------------------- */
+/*  STATIC HEIGHT VALUES BASED ON 11PX BASE FONT SIZE   */
+/* --------------------------------------------------- */
+.u-height-10px.jrs {height: 0.909em;}   /* 10px / 11px */
+.u-height-11px.jrs {height: 1em;}       /* 11px / 11px */
+.u-height-20px.jrs {height: 1.818em;}   /* 11px / 11px */
+.u-height-22px.jrs {height: 2em;}       /* 22px / 11px */
+.u-height-50px.jrs {height: 4.545em;}   /* 50px / 11px */
+.u-height-80px.jrs {height: 7.273em;}   /* 80px / 11px */
+.u-height-90px.jrs {height: 8.182em;}   /* 90px / 11px */
+.u-height-100px.jrs {height: 9.091em;}	/* 100px / 11px */
+.u-height-125px.jrs {height: 11.364em;}	/* 125px / 11px */
+.u-height-150px.jrs {height: 13.636em;}	/* 150px / 11px */
+.u-height-175px.jrs {height: 15.909em;}	/* 175px / 11px */
+.u-height-200px.jrs {height: 18.182em;}	/* 200px / 11px */
+.u-height-225px.jrs {height: 20.455em;}	/* 225px / 11px */
+.u-height-250px.jrs {height: 22.727em;}	/* 250px / 11px */
+.u-height-275px.jrs {height: 25em;}		/* 275px / 11px */
+.u-height-300px.jrs {height: 27.273em;}	/* 300px / 11px */
+.u-height-325px.jrs {height: 29.545em;}	/* 325px / 11px */
+.u-height-350px.jrs {height: 31.818em;}	/* 350px / 11px */
+.u-height-375px.jrs {height: 34.091em;}	/* 375px / 11px */
+.u-height-400px.jrs {height: 36.364em;}	/* 400px / 11px */
+.u-height-425px.jrs {height: 38.636em;}	/* 425px / 11px */
+.u-height-450px.jrs {height: 40.909em;}	/* 450px / 11px */
+.u-height-475px.jrs {height: 43.182em;}	/* 475px / 11px */
+.u-height-500px.jrs {height: 45.455em;}	/* 500px / 11px */
+.u-height-525px.jrs {height: 47.727em;}	/* 525px / 11px */
+.u-height-550px.jrs {height: 50em;}		/* 550px / 11px */
+.u-height-575px.jrs {height: 52.273em;}	/* 575px / 11px */
+.u-height-600px.jrs {height: 54.545em;}	/* 600px / 11px */
+.u-height-625px.jrs {height: 56.818em;}	/* 625px / 11px */
+.u-height-650px.jrs {height: 59.091em;}	/* 650px / 11px */
+.u-height-675px.jrs {height: 61.364em;}	/* 675px / 11px */
+.u-height-700px.jrs {height: 63.636em;}	/* 700px / 11px */
+
+
+/* ----------------- */
+/*  OVERFLOW RULES   */
+/* ----------------- */
+.u-overflow-show {overflow: visible;}
+.u-overflow-hide {overflow: hidden;}
+
+
+/* ------------------------------- */
+/*     TEXT WRAP AND TRUNCATION    */
+/* ------------------------------- */
+.u-truncate.jrs {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.u-wrap.jrs {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* --------------- */
+/*     CLEARFIX    */
+/* --------------- */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ------------------ */
+/*     POSITIONING    */
+/* ------------------ */
+.u-left.jrs		{float:left;}
+.u-right.jrs	{float:right;}
+
+
+/* --------------- */
+/*  MISCELLANEOUS  */
+/* --------------- */
+.caret.jrs {
+    border-left: .363em solid rgba(0, 0, 0, 0);		/* 4px / 11px */
+    border-right: .363em solid rgba(0, 0, 0, 0);	/* 4px / 11px */
+    border-top: .363em solid;						/* 4px / 11px */
+    display: inline-block;
+    /* font-size: .818em;								9px / 11px */
+    height: 0;
+    vertical-align: bottom;
+    margin-bottom:1px;
+    margin-left:-2px;
+    width: 0;
+} /* icon font will be better; this is a temp placeholder */

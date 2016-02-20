@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jaspersoft.ji-pro</groupId>
+  <artifactId>ji-jpivot-ui</artifactId>
+  <packaging>pom</packaging>
+  <version>6.1.0</version>
+  <name>JPivot-based JA UI</name>
+  <description>JasperAnalysis JPivot UI Enhancements Parent Dir</description>
+  <url>http://www.jaspersoft.com</url>
+  <modules>
+    <module>wcf</module>
+    <!-- <module>tbutils-wcf</module> -->
+    <module>jpivot</module>
+  </modules>
+  <properties>
+    <ji-mondrian-version>3.2.0-13661</ji-mondrian-version>
+    <ji-jpivot-version>6.1.0</ji-jpivot-version>
+    <ji-wcf-version>6.1.0</ji-wcf-version>
+  </properties>
+  <distributionManagement>
+    <repository>
+      <id>jasperserver-repo</id>
+      <name>Internal repository</name>
+      <url>${jasperserver-repo}</url>
+    </repository>
+  </distributionManagement>
+</project>

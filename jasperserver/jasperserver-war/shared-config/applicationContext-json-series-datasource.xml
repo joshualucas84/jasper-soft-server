@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <bean id="jsonSeriesDataSource"
+        class="com.jaspersoft.jasperserver.api.engine.jasperreports.util.CustomDataSourceDefinition">
+        <property name="factory" ref="customDataSourceServiceFactory" />
+        <property name="name" value="JsonSeriesDataSource" />
+		<property name="serviceClassName" value="com.jaspersoft.jasperserver.api.engine.jasperreports.json.JsonSeriesDataSourceService" />
+        <property name="customFactory">
+        	<bean class="com.jaspersoft.jasperserver.api.engine.jasperreports.json.JsonSeriesDataSourceServiceFactory">
+        		<property name="repository" ref="${bean.repositoryService}"/>
+        	</bean>
+        </property>
+        <property name="validator">
+            <bean
+                class="com.jaspersoft.jasperserver.api.engine.jasperreports.json.JsonSeriesDataSourceValidator" />
+        </property>
+        <property name="propertyDefinitions">
+            <list>
+                <map>
+                    <entry key="name" value="folder" />
+                    <entry key="mandatory" value="true" />
+                </map>
+                <map>
+                    <entry key="name" value="jsonResourcePattern" />
+                    <entry key="mandatory" value="true" />
+                </map>
+            </list>
+        </property>
+    </bean>
+</beans>

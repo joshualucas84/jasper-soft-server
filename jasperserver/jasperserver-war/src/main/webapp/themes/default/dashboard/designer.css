@@ -1,0 +1,1030 @@
+/*
+
+ TREE SPECIFIC CSS
+
+*/
+.hideRoot>.node>.subcontainer>.j-view-port-chunk>.collapsible{
+    margin-left: 0;
+}
+
+.treeBox > .content > .body {
+    padding: 6px;
+    height: 250px;
+}
+
+/*
+
+ END OF TREE SPECIFIC CSS
+
+*/
+
+/*
+
+ SAVE AS DIALOG CSS
+
+*/
+
+#dashboard .saveAs {
+    width: 440px;
+    height: auto;
+}
+
+#dashboard .saveAs .folders{
+    height: 250px;
+}
+
+#dashboard .saveAs .j-view-port-chunk{
+    width: auto;
+}
+
+#dashboard .saveAs .subcontainer .treeBox > .content {
+    height: 100%;
+}
+
+#dashboard .saveAs .subcontainer .treeBox > .content > .body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/*
+
+ END OF SAVE AS DIALOG CSS
+
+*/
+
+/*
+
+ HELPERS CSS
+
+*/
+
+.dragHelper {
+    z-index: 100000;
+    white-space: nowrap;
+}
+
+/*
+
+ END OF HELPERS CSS
+
+*/
+
+/**
+    PROPERTIES CSS
+**/
+
+.addDashboardComponentDialog {
+    width: 600px;
+    min-width: 450px;
+}
+
+.dashboardLevelPropertiesDialog {
+    width: 414px;
+}
+
+.dashboardLevelPropertiesDialog .control label {
+    color: #333;
+}
+
+.dashboardLevelPropertiesDialog .refreshIntervalProperty label {
+    color: #666;
+}
+
+.dashboardLevelPropertiesDialog.dashboardPropertiesDialog{
+    width: 350px;
+}
+
+.dashboardPropertiesDialog .section > .refreshSettings > .title {
+    color: #666666;
+}
+
+.dashboardLevelPropertiesDialog > .content > .subcontainer {
+    padding: 15px;
+}
+
+.dashboardLevelPropertiesDialog .section > .title {
+    font-weight: normal;
+}
+
+.dashboardLevelPropertiesDialog .section {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.filterGroupDialog .section:last-of-type,
+.filterGroupDialog .section:last-of-type > .control,
+inputControlDialog .dashletNameProperty {
+    margin-bottom: 0;
+}
+
+.dashboardLevelPropertiesDialog.textDialog .section { /* NEW */
+    margin-bottom: 0;
+}
+
+.dashboardLevelPropertiesDialog .subcontainer .title {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.dashboardLevelPropertiesDialog .subcontainer .section .group {
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.dashboardLevelPropertiesDialog .refreshIntervalProperty.input {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.dashboardLevelPropertiesDialog .control.text {
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.dashboardLevelPropertiesDialog .control.dashletNameProperty > input[type=text],
+.dashboardLevelPropertiesDialog .control.url > input[type=text],
+.dashboardLevelPropertiesDialog .control.textProperty input[type=text] {
+    width: 355px;
+    display: block;
+    margin-top: 5px;
+}
+.dashboardLevelPropertiesDialog .control input{
+    background-image: none;
+}
+
+.dashboardLevelPropertiesDialog .control.refreshIntervalProperty input[type=text]{
+    width: 35px;
+}
+
+.dashboardLevelPropertiesDialog .control.fontProperty select,
+.dashboardLevelPropertiesDialog .control.alignmentProperty select {
+    width: 100px;
+    margin: -15px 0 0 70px;
+}
+
+.dashboardLevelPropertiesDialog .control.buttonsPositionProperty select,
+.dashboardLevelPropertiesDialog .control.scaleToFitProperty select,
+.dashboardLevelPropertiesDialog .control.chartHyperlinksAction select,
+.dashboardLevelPropertiesDialog .control.filtersPerRowProperty select{
+    display: block;
+    margin: 5px 0px 0px 0px;
+    min-width:80px;
+    width: auto;
+}
+
+.dashboardLevelPropertiesDialog .control.chartHyperlinksAction select {
+    width: 150px;
+}
+
+.dashboardLevelPropertiesDialog .control.scaleToFitProperty{
+    margin-top: 15px;
+}
+
+.dashboardLevelPropertiesDialog .control.chartHyperlinksAction{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.dashboardLevelPropertiesDialog .control.resourceProperty .resource,
+.dashboardLevelPropertiesDialog .control.resourceIdProperty .resource {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    margin-top: 4px;
+    margin-right: 20px;
+    word-wrap: break-word;
+}
+
+.dashboardLevelPropertiesDialog .control.refreshIntervalProperty .message.warning {
+    margin-top: 7px;
+    padding-right: 20px;
+}
+
+.dashboardLevelPropertiesDialog .message.warning{
+    margin-top: 2px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .fontProperty, .sizeProperty{
+    float: left;
+    margin-right: 10px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties{
+    float: left;
+    margin-left: 10px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .fontProperty > .control select {
+    width: 193px;
+    height: 100px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .sizeProperty > .control select {
+    width: 48px;
+    height: 100px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textInputButton{
+    background: url("../images/dialog_button_capsule_sprite.png") repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 26px;
+    margin-left: 0px;
+    margin-right: 4px;
+    position: relative;
+    width: 26px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textInputButton.checked{
+    background-position: 0 -50px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textIcon{
+    background: url("../images/button_formatting_sprite.png");
+    display: inline-block;
+    height: 22px;
+    margin: 3px;
+    width: 20px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textBold{
+    background-position: 0 -3px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textBold.checked{
+    background-position: -30px -3px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textItalic{
+    background-position: 0 -49px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textItalic.checked{
+    background-position: -30px -49px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textALeft{
+    background-position: -2px -142px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textALeft.checked{
+    background-position: -32px -142px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textACenter{
+    background-position: -1px -188px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textACenter.checked{
+    background-position: -31px -188px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textARight{
+    background-position: 0 -234px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textARight.checked{
+    background-position: -30px -234px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textBackgroundColor{
+    background-position: 2px -551px;
+    width: 34px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textColor{
+    background-position: 3px -508px;
+    width: 34px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textColorButtons{
+    background-position: -58px 0;
+    width: 34px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons .textColorButtons .colorIndicator{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    width: 16px;
+    margin-left: 6px;
+    height: 4px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .fontProperty select,
+.dashboardLevelPropertiesDialog .text-visualization > .sizeProperty select{
+    margin: 0;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .styleProperties .buttons{
+    margin-bottom: 5px;
+    height: 19px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization > .fontProperty > .control input[name='font'] {
+    width: 185px;
+}
+
+.dashboardLevelPropertiesDialog .section > .control.scrollBarProperty{
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.dashboardLevelPropertiesDialog .text-visualization{
+    width: 100%;
+    padding: 2px 0px 5px 0px;
+    height: 166px;
+    display: inline-block;
+}
+
+.dashboardLevelPropertiesDialog .section > .control,
+.dashboardLevelPropertiesDialog .section .controlsTitle{
+    /* margin-top: 3px; */
+}
+
+.dashboardLevelPropertiesDialog .control.checkBox label {
+    margin-left: 20px;
+}
+
+.dashboardLevelPropertiesDialog .showTitleBarElements > .control.checkBox{
+    margin-top: 5px;
+}
+
+.dashboardLevelPropertiesDialog .chartHyperlinks > .control.checkBox {
+    margin-top: 5px;
+}
+
+.dashboardLevelPropertiesDialog .fixedCanvasControl input[type="checkbox"]{
+    width: auto !important;
+    white-space: normal;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+
+
+
+.dashboardLevelPropertiesDialog .control input[type=text] {
+    width: 40px;
+    padding: 4px 2px 4px 4px;
+
+}
+
+.dashboardLevelPropertiesDialog .control select {
+    width: 100px;
+    margin: -21px 0 0 45px;
+}
+
+.dashboardLevelPropertiesDialog > .content > .subcontainer > .tabbedPanel > .subcontainer {
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+}
+
+.dashboardLevelPropertiesDialog > .subcontainer > .tabbedPanel > .subcontainer.bordered {
+    border: 1px solid #B5B5B5;
+    padding: 24px 16px 0 16px
+}
+
+.dashboardLevelPropertiesDialog > .content .tabbedPanel > .subcontainer.bordered .section:last-of-type {
+    margin-bottom: 16px;
+}
+
+.inputControlDialog > .content .tabContainer .section:last-of-type,
+.inputControlDialog > .content .tabContainer .section:last-of-type .control:last-of-type {
+    margin-bottom: 4px;
+}
+
+.dashboardLevelPropertiesDialog > .subcontainer > .tabbedPanel > .header {
+    background-color: #FFFFFF;
+    border-bottom: none;
+    height: 22px;
+    line-height: 22px;
+}
+
+/* Chrome only css */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    .dashboardLevelPropertiesDialog .control select {
+        width: 100px;
+        margin: -20px 0 0 50px;
+    }
+}
+
+/*
+
+ END OF PROPERTIES DIALOGS CSS
+
+*/
+
+/* START dashlet-level properties */
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .control > .title,
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section > .refreshSettings > .title,
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section > .showTitleBarElements > .title,
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section > .chartHyperlinks > .title,
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section > .textProperty > .title,
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .text-visualization .wrap.title {
+	color: #121212;
+	font-weight: normal;
+}
+
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section > .chartHyperlinks {
+    margin-top: 5px;
+    display: block;
+}
+
+.dashletLevelPropertiesDialog.filterGroupDialog .control.buttonsPositionProperty > .wrap,
+.dashletLevelPropertiesDialog.filterGroupDialog .control.filtersPerRowProperty > .wrap,
+.dashletLevelPropertiesDialog.filterGroupDialog .controlsTitle.wrap,
+.dashletLevelPropertiesDialog.webPageViewDialog .control.url > .wrap,
+.dashletLevelPropertiesDialog.inputControlDialog .control.dashletNameProperty > .wrap,
+.dashletLevelPropertiesDialog.inputControlDialog .control.resourceIdProperty > .wrap:first-child {
+    color: #121212;
+}
+
+.dashletLevelPropertiesDialog.filterGroupDialog .controlsTitle.wrap {
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.dashletLevelPropertiesDialog .section > .chartHyperlinks > .availableParametersList {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-height: 207px;
+    overflow: auto;
+}
+
+.dashletLevelPropertiesDialog .section > .chartHyperlinks > .availableParametersList > li {
+    padding-top: 8px;
+    color: #666666;
+    height: 25px;
+}
+
+.dashletLevelPropertiesDialog .section > .chartHyperlinks > .control.url > .hint {
+    font-size: 80%;
+    margin-top: 3px;
+    display: block;
+}
+
+.dashletLevelPropertiesDialog .section > .control {
+    /* margin-top: 5px; */
+}
+
+.dashletLevelPropertiesDialog .text-visualization .wrap.title {
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .refreshSettings .group {
+	margin-top: 5px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.dashboardLevelPropertiesDialog.dashletLevelPropertiesDialog .section {
+	/* margin-left: 8px */
+}
+/* END dashlet-level properties */
+
+/*
+
+ DASHBOARD DESIGNER CSS
+
+*/
+
+.dashboardDesigner .dashboardSidebar .control.searchLockup input[type="text"] {
+	height: 21px;
+}
+
+.dashboardDesigner .dashboardSidebar .newContentPanel .collapsible > li span.wrap,
+.dashboardDesigner .dashboardSidebar .libraryPanel .collapsible > li span.wrap,
+.dashboardDesigner .dashboardSidebar .reportParametersContentPanel .collapsible > li span.wrap{
+    text-decoration: none;
+    padding: 0px;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.dashboardDesigner .dashboardSidebar .newContentPanel .collapsible > li p.wrap,
+.dashboardDesigner .dashboardSidebar .libraryPanel .collapsible > li p.wrap,
+.dashboardDesigner .dashboardSidebar .reportParametersContentPanel .collapsible > li p.wrap {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.dashboardDesigner .primary.column.decorated.dashboardCanvas {
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+
+.dashboardDesigner .primary.column.decorated.dashboardCanvas > .content > .body {
+    height: auto;
+    width: auto;
+}
+
+.dashboardDesigner .dashboardCanvasContainer {
+    top: 58px;
+    background-color:#E0E0E0;
+    overflow: auto !important;
+}
+
+.dashboardDesigner .previewMode {
+    top: 29px;
+}
+
+.dashboardDesigner .dashboardCanvas > .content > .body {
+    top: 0;
+}
+
+.dashboardDesigner .dashboardSidebar {
+    position: absolute;
+}
+
+.dashboardDesigner .dashboardSidebar .panel.collapsiblePanel {
+/* these style rules break the section resize behavior */
+/*
+	border-top: 1px solid #c8d1dc;
+	border-bottom: 1px solid #c8d1dc;
+	margin-bottom: 1px; 
+*/
+}
+
+.dashboardSidebar .newContentPanel .subcontainer .ui-resizable-handle,
+.dashboardSidebar .libraryPanel .subcontainer .ui-resizable-handle{
+    height: 2px;
+    border-top: 1px solid #c8d1dc;
+    border-bottom: 1px solid #c8d1dc;
+}
+
+.dashboardSidebar .libraryPanel .subcontainer .ui-resizable-handle{
+    background-color: #f8f8f8;
+}
+
+.dashboardDesigner .dashboardSidebar .panel.collapsiblePanel > .header {
+    background-color: #d5dee8;
+	border-bottom: 1px solid #c8d1dc;
+	border-top: 1px solid #fff;
+	height: 23px;
+}
+
+.dashboardDesigner .dashboardSidebar .panel.collapsiblePanel > .header > .title {
+	font-size: 11px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.dashboardDesigner .dashboardSidebar .panel.collapsiblePanel > .header > .button.mutton {
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+
+
+.dashboardDesigner .dashboardSidebar .body > .panel > .subcontainer{
+    min-height: 135px;
+    width: 100%;
+}
+
+.dashboardDesigner .dashboardSidebar .body > .panel .ui-resizable-handle {
+    bottom: 0;
+    cursor: row-resize;
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-filter-invisible > p.wrap {
+    font-style: italic;
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-chart > p.wrap > .icon {
+    background-position: 0 2px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-crosstab > p.wrap > .icon {
+    background-position: 0 -27px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-table > p.wrap > .icon {
+    background-position: 0 -57px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-text > p.wrap > .icon {
+    background-position: 0 -87px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-webPageView > p.wrap > .icon {
+    background-position: 0 -115px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-newContent-image > p.wrap > .icon {
+    background-position: 0 -148px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-adhoc > p.wrap > .icon {
+    background-position: 0 -267px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-report > p.wrap > .icon {
+    background-position: 0 -298px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-filter > p.wrap > .icon {
+    background-position: 0 -447px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-filter-invisible > p.wrap > .icon {
+    background-position: 0 -477px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-report.open > p.wrap > .icon {
+    background-position: 0 -418px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-report.closed > p.wrap > .icon {
+    background-position: 0 -388px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-adhoc.open > p.wrap > .icon {
+    background-position: 0 -358px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+.dashboardDesigner .dashboardSidebar .dashboard-existingContent-adhoc.closed > p.wrap > .icon {
+    background-position: 0 -328px;
+    background-image: url("../images/dashboard_designer_sprite.png");
+}
+
+
+.dashboardDesigner .dashboardSidebar .control.searchLockup>.wrap>input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 46px;
+}
+
+#dashboard .adhocDesignerIframe {
+    visibility: visible !important;
+    margin: 15px;
+    position: absolute;
+    display: none;
+    left: 0;
+    z-index: 1002;
+}
+
+.dashboardDesigner .dashboardSidebar .button.filter {
+    float: right;
+    padding-right: 15px;
+    margin-right: 5px;
+}
+
+.dashboardDesigner .dashboardSidebar .button.filter .icon {
+    background-image: url("../images/disclosure_indicators_sprite.png");
+    background-position: 0 -48px;
+    background-repeat: no-repeat;
+    height: 24px;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+}
+
+.dashboardDesigner .dashboardSidebar .button.filter {
+    float: right;
+    padding-right: 15px;
+    margin-right: 5px;
+}
+
+.dashboardDesigner .dashboardSidebar .button.filter .icon {
+    background-image: url("../images/disclosure_indicators_sprite.png");
+    background-position: 0 -48px;
+    background-repeat: no-repeat;
+    height: 24px;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+}
+
+.dashboardDesigner .dashboardSidebar.minimized > .ui-resizable-handle {
+    display: none !important;
+}
+
+.dashboardDesigner .dashboardSidebar .vtitle {
+    width: 141px;
+    top: 141px;
+}
+
+#dashboard .oneColumn > .primary.column
+{
+    left:0 !important;
+}
+
+.dashboard.dimmer{
+    position: absolute;
+    	top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+    background-color: #000;
+    opacity: .6;
+}
+
+.dashboardDesigner .collapsiblePanel > .header > .buttonIconToggle {
+    height: 22px;
+}
+
+.dashboardDesigner .collapsiblePanel.open > .header > .buttonIconToggle {
+    background-position: 1px -925px;
+}
+
+.dashboardDesigner .collapsiblePanel.closed > .header > .buttonIconToggle {
+    background-position: -19px -925px;
+    width: 10px;
+    margin-right: 6px;
+}
+
+.dashboardDesigner .collapsiblePanel .searchLockup {
+    margin-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.dashboardDesigner .collapsiblePanel .searchLockup + .list.folders {
+    border-top: 1px solid #b7b7b7;
+}
+
+/*
+
+ END OF DASHBOARD DESIGNER CSS
+
+*/
+
+/*
+
+ COLOR PICKER CSS
+
+*/
+
+.colorPicker{
+    width: 175px;
+    position: absolute;
+    padding: 12px;
+    height: 180px;
+    z-index: 9999;
+    background-color: #EDEDED;
+}
+
+.colorPicker .colorInput{
+    width: 165px;
+    padding: 4px;
+}
+
+/*
+
+ END OF COLOR PICKER CSS
+
+*/
+
+/*
+
+ FILTER MANAGER DIALOG CSS
+
+*/
+
+.filterManagerDialog .addNewFilter {
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: #2881bb;
+}
+
+.filterManagerDialog .control.textProperty {
+    float: left;
+    margin-left: 11px;
+}
+
+.filterManagerDialog .control.textProperty input{
+    width: 205px;
+}
+
+.filterManagerDialog > .content > .subcontainer {
+    max-height: 450px;
+    overflow: auto;
+}
+
+.filterManager {
+    border-collapse: collapse;
+    border: 1px solid #b9b9b9;
+    border-bottom: none;
+    margin: 12px;
+}
+
+.filterManager .filterManagerHeader {
+    background-color: #edf2f8;
+}
+
+.filterManager th, .filterManager td {
+    border-bottom: 1px solid #b9b9b9;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+
+.filterManager th {
+    font-weight: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.filterManager .dashletColumn,
+.filterManager .parameterColumn {
+    width: 200px;
+}
+
+.filterManager .filterColumn,
+.filterManager .sourceColumn {
+    width: 200px;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.filterManager td.sourceColumn {
+    border-right: 1px solid #b9b9b9;
+}
+
+/* .filterManager td.filterColumn > input[type="text"] {
+	margin-top: -6px;
+} */
+
+.filterManager td.filterColumn input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.filterManager td.filterColumn p{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.filterManager td.filterColumn.invisible {
+    font-style: italic;
+}
+
+.filterManager td.addConsumerColumn {
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+.filterManager .addConsumerColumn,
+.filterManager .removeConsumerColumn {
+    width: 50px;
+    text-align: center;
+}
+
+.filterManager .selectConsumerColumn {
+    padding: 0;
+    height: 35px;
+}
+
+.filterManager .consumerTable td {
+    border: none;
+}
+
+.filterManager .consumerTable .consumerRow {
+    height: 35px;
+}
+
+.filterManager .button.simple.action.over {
+    background-color: #ffffff;
+}
+
+.filterManager .button.simple.action.pressed {
+    background-color: #ffffff;
+}
+
+.filterManager .button.simple.action {
+    height: 20px;
+    margin-top: 2px;
+}
+
+.filterManager .button.simple.action.add {
+	background-position: 4px -72px;
+}
+
+.filterManager .button.simple.action.delete {
+	background-position: 4px -38px;
+}
+
+/*
+
+ END OF FILTER MANAGER DIALOG CSS
+
+*/
+
+/*
+
+ ADD DASHBOARD COMPONENT DIALOG CSS
+
+*/
+
+.addDashboardComponentDialog {
+    width: 480px;
+    min-width: 450px;
+}
+
+.addDashboardComponentDialog .control.input.text input{
+    padding: 5px;
+}
+
+/*
+
+ END OF ADD DASHBOARD COMPONENT DIALOG CSS
+
+*/
+
+/*
+
+ DASHBOARD CANVAS CSS
+
+*/
+
+.dashboardCanvas .nothingToDisplay .message > .welcomeList {
+    list-style-type: disc;
+}
+
+.dashboardCanvas .nothingToDisplay .message > .welcomeList li {
+    margin: 5px 20px;
+}
+
+.dashboardCanvas .ui-resizable-handle {
+    z-index: 101 !important;
+}
+
+.dashboardCanvas .ui-resizable-se {
+    width: 9px;
+    height: 9px;
+}
+
+.dashboardCanvas > .helper {
+    position: absolute;
+    background-color:#ffcc66;
+    opacity: .75;
+    z-index: 1;
+}
+
+.helper.filter-dialog-drop {
+    position: absolute;
+    background-color:#ffcc66;
+    opacity: .75;
+}
+
+.dashboardCanvas .ui-icon-gripsmall-diagonal-se {
+    background: none;
+}
+
+.dashboardCanvas > .grid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 100%;
+}
+
+.dashboardCanvas > .grid > div {
+    background: #C7C8C8;
+    position: absolute;
+}
+
+.dashlet.selected > .dashletContent,
+.filterRow .inputControlWrapper.selected {
+    border: 1px solid #FF6B11 !important;
+}
+
+.dashlet.selected > .dashletContent {
+    outline: 1px solid #FF6B11;
+}
+
+/*
+
+ END OF DASHBOARD CANVAS CSS
+
+*/

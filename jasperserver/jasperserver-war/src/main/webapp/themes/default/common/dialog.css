@@ -1,0 +1,67 @@
+/* ------------------- */
+/*  DIALOG BOX MODULE  */
+/* ------------------- */
+
+.m-Dialog.jrs {
+    background-color: #fff;
+    border: .091em solid #999;
+    -moz-box-shadow: 0px 0px 15px 0px #333;
+    -webkit-box-shadow: 0px 0px 15px 0px #333;
+    box-shadow: 0px 0px 15px 0px #333;
+}
+
+.m-Dialog-header.jrs {
+    background-color: #e3e3e3;
+    height: 2.909em;        /* 32px / 11px */
+    padding-left: 1.091em;	/* 12px / 11px */
+    padding-right: 1.091em;	/* 12px / 11px */
+    position: relative;
+}
+
+.m-Dialog-header-title.jrs {
+    color: #195b8a;
+    display: inline-block;
+    font-size: 1.091em;		/* 12px / 11px */
+    font-weight: bold;
+    height: 100%;           /* 28px / 12px */
+    line-height: 2.909;     /* 32px / 11px */
+    max-width: calc(100% - 2em);    /* 22px / 11px */
+    max-width: 95%\9;            /* IE9 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.m-Dialog-header-close.jrs {
+    background: transparent url("../images/button_action_icons_sprite.png") no-repeat 0 50%;
+    height: 100%;
+    position: absolute;
+        right: 0;
+    width: 2.364em; /* 26px / 11px */
+}
+
+.m-Dialog-body.jrs {
+    overflow-y: auto;
+    padding: 1.364em 1.091em;	/* 15px / 11px AND 12px / 11px */
+    position: relative;
+    min-width: 22.727em;    /* 250px / 11 */
+    min-height: 10em;       /* 110px / 11 */
+}
+
+.m-Dialog-footer.jrs {
+    border-top: none;
+    padding: 0.545em .909em;	/* 6px / 11px AND 10px / 11px */
+    position: relative;
+}
+.ui-resizable .m-Dialog-footer.jrs {
+    border-top: 1px solid #ccc;
+}
+.m-Dialog-footer-sizer.jrs {
+    background: transparent url("../images/sizer_icons_sprite.png") no-repeat 0 0;
+    cursor: pointer;
+    height: 1.455em;        /* 16px / 11px */
+    position: absolute;
+        right: .727em;      /* 8px / 11px */
+        bottom: .727em;     /* 8px / 11px */
+    width: 1.455em;         /* 16px / 11px */
+}

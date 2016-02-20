@@ -1,0 +1,1 @@
+define(["require","jquery.timepicker.original","settings!dateTimeSettings","config/datepickerSettings"],function(e){var i=e("jquery.timepicker.original"),t=e("settings!dateTimeSettings");return e("config/datepickerSettings"),t&&i.timepicker.setDefaults(t.timepicker),i});

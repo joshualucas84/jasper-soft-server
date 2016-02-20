@@ -1,0 +1,242 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>commons-math</groupId>
+  <artifactId>commons-math</artifactId>
+  <name>Math</name>
+  <version>1.1</version>
+  <description>The Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.</description>
+  <url>http://jakarta.apache.org/commons/math/</url>
+  <issueManagement>
+    <url>http://issues.apache.org/bugzilla/</url>
+  </issueManagement>
+  <ciManagement>
+    <notifiers>
+      <notifier>
+        <configuration>
+          <address>commons-dev@jakarta.apache.org</address>
+        </configuration>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  <inceptionYear>2003</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>Commons Dev List</name>
+      <subscribe>commons-dev-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-dev-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://mail-archives.eu.apache.org/mod_mbox/jakarta-commons-dev/</archive>
+    </mailingList>
+    <mailingList>
+      <name>Commons User List</name>
+      <subscribe>commons-user-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-user-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://mail-archives.eu.apache.org/mod_mbox/jakarta-commons-user/</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>achou</id>
+      <name>Albert Davidson Chou</name>
+      <email>achou at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>mdiggory</id>
+      <name>Mark Diggory</name>
+      <email>mdiggory at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>rdonkin</id>
+      <name>Robert Burrell Donkin</name>
+      <email>rdonkin at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>tobrien</id>
+      <name>Tim O'Brien</name>
+      <email>tobrien at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>pietsch</id>
+      <name>J. Pietschmann</name>
+      <email>j3322ptm at yahoo dot de</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>psteitz</id>
+      <name>Phil Steitz</name>
+      <email>psteitz at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>brentworden</id>
+      <name>Brent Worden</name>
+      <email>brentworden at apache dot org</email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>C. Scott Ananian</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Rodrigo di Lorenzo Lopes</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Ken Geis</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Elliotte Rusty Harold</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Piotr Kochanski</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Fredrik Norin</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Christopher Schuck</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Mauro Talevi</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>Kim van der Linde</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+    <contributor>
+      <name>J??rg Weimar</name>
+      <email></email>
+      <url></url>
+      <organization></organization>
+      <timezone></timezone>
+    </contributor>
+  </contributors>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>/LICENSE.txt</url>
+      <comments></comments>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/jakarta/commons/proper/math/trunk</connection>
+    <developerConnection></developerConnection>
+    <url>http://svn.apache.org/viewcvs.cgi/jakarta/commons/proper/math/trunk/</url>
+  </scm>
+  <organization>
+    <name>The Apache Software Foundation</name>
+    <url>http://jakarta.apache.org</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <resources>
+      <resource>
+        <targetPath>META-INF</targetPath>
+        <directory>/home/phil/MATH_1_1</directory>
+        <includes>
+          <include>NOTICE.txt</include>
+        </includes>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <targetPath></targetPath>
+        <directory>src/test</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.txt</include>
+        </includes>
+      </testResource>
+    </testResources>
+    <plugins>
+      <plugin>
+        <artifactId>surefire</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+          <excludes>
+            <exclude>**/*AbstractTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-discovery</groupId>
+      <artifactId>commons-discovery</artifactId>
+      <version>0.2</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>default</id>
+      <name>Default Repository</name>
+      <url>file:///www/jakarta.apache.org/builds/jakarta-commons/math/</url>
+    </repository>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://cvs.apache.org//www/jakarta.apache.org/commons/math/</url>
+    </site>
+  </distributionManagement>
+</project>

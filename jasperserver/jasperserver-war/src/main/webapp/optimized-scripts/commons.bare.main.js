@@ -1,0 +1,1 @@
+define(["require","prototype","!domReady"],function(e){"use strict";e("prototype"),e("!domReady")});

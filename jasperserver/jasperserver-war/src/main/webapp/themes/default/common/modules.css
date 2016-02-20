@@ -1,0 +1,579 @@
+/* ================================
+ * SMACSS POC STYLE SHEET, MODULES
+ *
+ * typographic scale is 1.8
+ * ================================ */
+
+/* ------------- */
+/*  ICON MODULE  */
+/* ------------- */
+.m-Icon.jrs {
+    background-repeat: no-repeat;
+    display: inline-block;
+    *display: inline; /* IE7 */
+    position: relative;
+    zoom: 1; /* IE */
+    }
+
+
+
+/* ------------------------ */
+/*  INPUT CONTROLS MODULES  */
+/* ------------------------ */
+
+.m-Icontrol.jrs {}
+
+.m-Icontrol-label.jrs {
+    color: #666666;
+    display: block;
+    font-weight: bold;
+    line-height: 1.909;     /* 21px / 11px, unitless value */
+    }
+
+.m-Icontrol-text.jrs {
+    width: 100%;
+    }
+
+.m-Icontrol-textarea.jrs {
+    height: 5.818em;        /* 64px / 11px */
+    width: 100%;
+    }
+
+.m-Icontrol-picker.jrs {
+    width/*\**/: 90% \9;    /* IE8 */
+    width: calc(100% - 2.182em);  /* 24px / 11px */
+    white-space: normal;
+}
+
+.m-Icontrol-pickertrigger.jrs {
+    height:2.091em;     /* 23px / 11px, same height as input */
+    width:1.818em;      /* 20px / 11px */
+    }
+
+.m-Icontrol-pickertrigger-icon.jrs {
+    background-image: url("../images/control_icons_sprite.png");
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    width: 1.818em;     /* 20px / 11px */
+    height: 1.818em;    /* 20px / 11px */
+    }
+
+.m-Icontrol-checkset.jrs,
+.m-Icontrol-radioset.jrs {
+    margin-left: .545em;    /* 6px / 11px */
+    margin-top: .273em;     /* 3px / 11px */
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    }
+
+.m-Icontrol-checkitem.jrs,
+.m-Icontrol-radioitem.jrs   {
+    padding-bottom: .455em; /* 3px / 11px */
+    position: relative;
+    white-space: nowrap;
+    }
+
+.m-Icontrol-checkbox.jrs,
+.m-Icontrol-radio.jrs,
+.m-Icontrol-boolean.jrs {
+    display: inline-block;
+    line-height: 1.818em;   /* 20px / 11px */
+    margin-right: .182em;   /* 2px / 11px */
+    }
+
+.m-Icontrol-checklabel.jrs,
+.m-Icontrol-radiolabel.jrs,
+.m-Icontrol-booleanlabel.jrs  {
+    color: #666666;
+    display: inline-block;
+    vertical-align:top;
+    line-height: 1.364;     /* 15px / 11px, unitless value */
+    }
+
+.m-Icontrol-booleanlabel.jrs {
+    font-weight: bold;
+}
+
+.m-Icontrol-checklabel.foo.jrs {
+    line-height: 1.364;         /* 15px / 11px, unitless value */
+    margin-bottom: .273em;      /* 3px / 11px */
+    max-width/*\**/: 90% \9;    /* IE8 */
+    max-width: calc(100% - 1.727em);
+    white-space: normal;
+    }
+
+.m-Icontrol-search.jrs {
+    border-top: 1px inset threedface;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+    border-left: 1px inset threedface;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    padding-right: 2.909em; /* 32px / 11px */
+    width: 100%;
+    }
+
+.m-Icontrol-searchbutton.jrs {
+    position:absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    width: 2.545em; /* 28px / 11px */
+    }
+
+.m-Icontrol-searchbutton-icon.jrs {
+    background-image: url("../images/control_icons_sprite.png");
+    background-position: 0px -275px;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    width: 1.818em; /* 20px / 11px */
+    }
+
+
+
+/* ------------------------------- */
+/*  CUSTOM SELECT CONTROL MODULES  */
+/* ------------------------------- */
+
+/*  Select control, clickable and searchable input area */
+.m-ControlSelect-inputwrapper.jrs {
+    background-clip: padding-box;
+    background-color: #ffffff;
+    border:1px solid silver;
+    color: #333333 ;
+    display: inline-block;
+    height: 2.091em;        /* 23px / 11px */
+    overflow: hidden;
+    padding-left: .364em;   /* 4px / 11px */
+    padding-right: .364em;  /* 4px / 11px */
+    position: relative;
+    width:100%;
+    }
+
+.m-ControlSelect-input.jrs {
+    display: inline-block;
+    height: 100%;
+    line-height: 1.818em;       /* 20px / 11px */
+    max-width/*\**/: 90% \9;    /* IE8 */
+    max-width: calc(100% - 1.818em);
+    vertical-align: middle;
+    width:100%;
+    }
+
+.m-ControlSelect-inputicon.jrs {
+    background-image: url("../images/control_icons_sprite_vertical.png");
+    background-position: 1px -897px;
+    background-repeat: no-repeat;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    width: 2.545em;     /* 28px / 11px */
+    }
+
+.m-ControlSelect-searchwrapper.jrs {
+    background: #fff;
+    border-top: 0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 0;
+    border-left: 1px solid #c0c0c0;
+    padding:.364em; /* 4px / 11px */
+    top:-1px;
+    width: 100%;
+    z-index: 1001;
+    }
+
+
+/*  Select control dropdown container */
+.m-ControlSelect-dropdown.jrs {
+    background-color: #FFFFFF;
+    -moz-box-shadow: 0 4px 4px rgba(51,51,51,0.5);
+    -webkit-box-shadow: 0 4px 4px rgba(51,51,51,0.5);
+    box-shadow: 0 4px 4px rgba(51,51,51,0.5);
+    position: absolute;
+    z-index: 1001;
+
+    width: 100%;        /* this can be removed in production when element is dynamically assigned a width */
+    }
+
+.m-Icontrol-selectlist.jrs {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    }
+
+.m-Icontrol-selectoption.jrs {
+    cursor: pointer;
+    line-height: 1.818em;       /* 20px / 11px */
+    padding: 0 .545em;          /* 6px / 11px */
+    white-space: nowrap;
+    }
+
+    .m-Icontrol-selectoption.jrs > .jrs {
+        text-decoration: none;
+    }
+
+
+
+/* Multi-Select, clickable input area */
+.m-Multiselect.jrs  {
+    margin-top: 0.364em;
+    min-height: 87px; /* to see at least three items in selected items list */
+    width:100%;
+    height:100%;
+    }
+
+.m-Multiselect.jrs * {
+    /* box sizing */
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.m-Multiselect-toggleContainer.jrs {
+    height: 26px;
+    border-bottom: 1px solid #d6d6d6;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.m-Multiselect-toggle.jrs {
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    cursor: pointer;
+    position: absolute;
+    }
+
+    .m-Multiselect-toggleAvailable.jrs {
+        right: 50%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .m-Multiselect-toggleSelected.jrs {
+        right: 0;
+        bottom: 0;
+        left: 51%;
+    }
+
+.m-Multiselect-toggleLabel.jrs {
+    display: block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+
+.m-Multiselect-searchContainer.jrs {
+    background: #fff;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.m-Multiselect-search.jrs {
+    background: url("../images/icontrol_icons_sprite.png") no-repeat scroll right -117px #ffffff;
+    border: 1px solid #c0c0c0;
+    color: #333333;
+    display: inline-block;
+    height: 2.091em;        /* 23px / 11px */
+    overflow: hidden;
+    padding-left: 0.364em;  /* 4px / 11px */
+    padding-right: 2.545em; /* 28px / 11px */
+    position: relative;
+    width:100% !important;
+    }
+
+.m-Multiselect-search.placeholder.jrs {
+    color: #aaa;
+    }
+
+.m-Multiselect-listContainer.jrs {
+    background: transparent;
+    border-top: none;
+    border-bottom: 1px solid #d6d6d6;
+    height: 100%;
+}
+
+.m-Multiselect-listContainer-message.jrs {
+    /* display:none; */
+    font-style: italic;
+    height: 100%;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+
+.m-ListSelectMultiSelected-container.jrs {
+    background-color:#ffffff;
+    border-top:1px solid silver;
+    height: 100%;
+    margin-top: .455em;     /* 11px / 5px */
+    max-height: inherit;
+    min-height: 60px;;
+    }
+
+.m-Multiselect-buttonContainer.jrs {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    /* height: 2em; */      /* 22px / 11px */
+    height: 22px;
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    }
+
+    .m-Multiselect-button.jrs {
+        /* background-color: #eee; */
+        border-right: 1px solid #d6d6d6;
+        cursor: pointer;
+        color: #666666;
+        display: inline-block;
+        float: left;
+        height: 100%;
+        /* line-height: 2; */       /* 22px / 11px, unitless value */
+        line-height: 20px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        }
+
+@media screen\0 {
+    .m-Multiselect-button.jrs {
+        text-overflow: inherit;
+    }
+}
+    .m-Multiselect-button-icon.jrs {
+        background-image: url("../images/icontrol_icons_sprite.png");
+        background-color: transparent;
+        height: 22px;
+        vertical-align: top;
+        }
+
+        .m-Multiselect-button-icon.all.jrs {
+            background-position: 0 5px;
+            width: 11px;
+            }
+
+        .m-Multiselect-button-icon.none.jrs {
+            background-position: 0 -24px;
+            width: 11px;
+        }
+
+        .m-Multiselect-button-icon.invert.jrs {
+            background-position: 0 -55px;
+            width: 13px;
+            }
+
+    .m-Multiselect-button-label.jrs {
+        display: inline;
+        vertical-align: top;
+        }
+
+.m-Multiselect-button.jrs:last-of-type {
+    border-right: none;
+}
+
+/* START multiselect iPad styles */
+.ipad .m-Multiselect-toggleContainer.jrs {
+    height: 36px;
+}
+
+.ipad .m-Multiselect-toggleLabel.jrs {
+    font-size: 14px;
+}
+
+.ipad .m-Multiselect-search.jrs {
+    height: 2.727em; /* 30px / 11px */
+}
+
+.ipad .m-Multiselect-search.jrs {
+    background-position: right -266px;
+}
+
+.ipad .m-Selectlist-item.jrs {
+    font-size: 14px;
+    line-height: 2em; /* 22px / 11px */
+}
+
+.ipad .m-Selectlist-item-icon.delete.jrs {
+    background-position: 0 -232px;
+    height: 26px;
+    width: 20px;
+}
+
+.ipad .m-Multiselect-buttonContainer.jrs {
+    height: 30px;
+}
+
+.ipad .m-Multiselect-button.jrs {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.ipad .m-Multiselect-button-icon.jrs {
+	height: 28px;
+}
+
+.ipad .m-Multiselect-button-icon.all.jrs {
+    background-position: 0 -142px;
+    width: 20px;
+}
+
+.ipad .m-Multiselect-button-icon.none.jrs {
+    background-position: 0 -172px;
+    width: 17px;
+}
+
+.ipad .m-Multiselect-button-icon.invert.jrs {
+    background-position: 0 -203px;
+    width: 18px;
+}
+/* END multiselect iPad styles */
+
+/* ---------------------- */
+/*  SCALABLE LIST MODULE  */
+/* ---------------------- */
+
+.m-Scalablelist.jrs {
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative; /* fix for IE7-8 */
+
+    /* disable selection */
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /*border*/
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* -------------------- */
+/*  SELECT LIST MODULE  */
+/* -------------------- */
+
+.m-Selectlist.jrs {
+    position: relative; /* fix for IE7-8 */
+
+    /* disable selection */
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /*border*/
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+
+    /* fonts */
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    line-height:1.182em;
+}
+
+/* select list */
+.m-Selectlist-item.jrs {
+    cursor: pointer;
+    line-height: 1.545em;       /* 17px / 11px */
+    border-top: 1px solid #fff;
+    padding: 0 .545em;          /* 6px / 11px */
+    white-space: nowrap;
+    }
+
+.m-Selectlist-item-wrapper.jrs {
+    /* padding: .182em 0; */            /* top,bottom padding = 2px / 11px */
+    padding: 2px 0;
+    }
+
+.m-Selectlist-item-text.jrs {
+    display: block; /* this MUST be block in order for text truncation with ellipses to work */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    }
+
+.m-SelectlistSelected.jrs {}
+
+.m-SelectlistSelected.jrs > .m-Selectlist-item.jrs {
+    background-color: #1388d8;
+    color: #fff;
+    }
+
+.m-SelectlistSelected.jrs .m-Selectlist-item-icon.jrs {
+    background-color: transparent;
+    background-image: url("../images/icontrol_icons_sprite.png");
+    }
+
+.m-Selectlist-item-icon.delete.jrs {
+    background-position: 0 -85px;
+    float: left;
+    height:16px;
+    width: 16px;
+    }
+
+
+/* --------------- */
+/*  ALERT MODULES  */
+/* --------------- */
+
+.m-Icontrol-alert.jrs {
+    color: #FF0000;
+    display: block;
+    font-size:1em;
+    line-height:1.364;      /* 15px / 11px, unitless value */
+    margin-top: .182em;     /* 2px / 11px */
+    }
+
+
+/* ----------------- */
+/*  RESIZER MODULES  */
+/* ----------------- */
+
+.m-sizer.jrs {}
+
+.m-sizerVertical.jrs {
+    cursor: row-resize;
+    height: .909em;         /* 10px / 11px */
+    margin-bottom: .909em;  /* 10px / 11px */
+    position: static;
+    width: 100%;
+    }
+

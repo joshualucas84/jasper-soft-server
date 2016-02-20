@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="JIRole" name="com.jaspersoft.jasperserver.api.metadata.user.domain.impl.hibernate.RepoRole">
+    <id type="long" column="id" name="id">
+      <generator class="native"/>
+    </id>
+    <natural-id mutable="true">
+      <property name="roleName" not-null="true" length="100" type="string" column="rolename"/>
+      <many-to-one name="tenant" column="tenantId" not-null="true"
+        class="com.jaspersoft.jasperserver.api.metadata.user.domain.impl.hibernate.RepoTenant"/>
+    </natural-id>
+    <property name="externallyDefined" type="boolean" column="externallyDefined"/>
+    <set table="JIUserRole" inverse="true" name="users" fetch="subselect"> 
+      <key column="roleId" />
+      <many-to-many column="userId" class="com.jaspersoft.jasperserver.api.metadata.user.domain.impl.hibernate.RepoUser" />
+    </set>
+  </class>
+
+<!-- create index JIRole_tenantId_index on JIRole (tenantId); -->
+<database-object>
+	<create>create index JIRole_tenantId_index on JIRole (tenantId)</create>
+	<drop>DROP INDEX JIRole_tenantId_index ON JIRole</drop>
+</database-object>
+
+<!-- create index JIUserRole_roleId_index on JIUserRole (roleId); -->
+<database-object>
+	<create>create index JIUserRole_roleId_index on JIUserRole (roleId)</create>
+	<drop>DROP INDEX JIUserRole_roleId_index ON JIUserRole</drop>
+</database-object>
+
+<!-- create index JIUserRole_userId_index on JIUserRole (userId); -->
+<database-object>
+	<create>create index JIUserRole_userId_index on JIUserRole (userId)</create>
+	<drop>DROP INDEX JIUserRole_userId_index ON JIUserRole</drop>
+</database-object>
+
+</hibernate-mapping>

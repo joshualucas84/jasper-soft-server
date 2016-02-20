@@ -1,0 +1,248 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jaspersoft.ji-pro.ji-jpivot-ui</groupId>
+  <artifactId>ji-jpivot</artifactId>
+  <packaging>jar</packaging>
+  <version>6.1.0</version>
+  <name>JPivot-based JA UI - JPivot</name>
+  <description>JasperAnalysis JPivot UI Enhancements</description>
+  <url>http://www.jaspersoft.com</url>
+  <parent>
+    <groupId>jaspersoft.ji-pro</groupId>
+    <artifactId>ji-jpivot-ui</artifactId>
+    <version>6.1.0</version>
+  </parent>
+  <build>
+    <plugins>
+      <plugin>
+        <!--COMMENT: Here we are calling the existing jpivot build.xml from maven.-->
+        <!--JI mods to jpivot are layered on top of existing structure-->
+        <!--so it is best to use the existing ant build.xml setup.-->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>compile</id>
+            <phase>compile</phase>
+            <configuration>
+              <tasks>
+                <echo>Compile: About to call: the ant build.xml for jpivot files</echo>
+                <ant antfile="build.xml" inheritall="true" inheritrefs="true">
+                  <target name="compile"/>
+                  <target name="archives"/>
+                </ant>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <configuration>
+              <tasks>
+                <echo>Deploy: About to call: the ant build.xml for jpivot files</echo>
+                <ant antfile="build.xml" inheritall="true" inheritrefs="true">
+                  <target name="publish"/>
+                </ant>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-launcher</artifactId>
+            <version>1.6.5</version>
+          </dependency>
+          <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-trax</artifactId>
+            <version>1.6.5</version>
+          </dependency>
+          <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.8.1</version>
+          </dependency>
+          <dependency>
+            <groupId>commons-vfs</groupId>
+            <artifactId>commons-vfs</artifactId>
+            <version>1.0</version>
+          </dependency>
+          <!--<dependency>
+			<groupId>net.sourceforge.retroweaver</groupId> 
+			<artifactId>retroweaver</artifactId> 
+			<version>1.2.4</version> 
+          </dependency>
+          <dependency>
+		<groupId>commons-io</groupId> 
+		<artifactId>commons-io</artifactId> 
+  		<version>1.2</version> 
+          </dependency>-->
+          <dependency>
+            <!--Required in order to use javac-->
+            <groupId>sun.jdk</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.5</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+          </dependency>
+        </dependencies>
+      </plugin>
+      <plugin>
+        <!--explicitly clean the build dirs under jpivot-ui/jpivot-->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>${basedir}/build</directory>
+            </fileset>
+            <fileset>
+              <directory>${basedir}/dist</directory>
+              <!--could delete individual files with <includes>
+		   <includes>
+                     <include>*</include>
+		   </includes>-->
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>jaspersoft.ji-pro.ji-jpivot-ui</groupId>
+      <artifactId>ji-wcf</artifactId>
+      <version>${ji-wcf-version}</version>
+    </dependency>
+    
+    <!-- 
+    
+    Only 1 jar now
+    
+    <dependency>
+      <groupId>jaspersoft.ji-pro.ji-jpivot-ui</groupId>
+      <artifactId>ji-tbutils-wcf</artifactId>
+      <version>${ji-wcf-version}</version>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>mondrian</groupId>
+      <artifactId>mondrian</artifactId>
+      <version>${ji-mondrian-version}</version>
+      <exclusions>
+	<!-- exclude XML APIs -->
+	  <exclusion>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	  </exclusion>
+	  <exclusion>
+	    <groupId>xerces</groupId>
+	    <artifactId>xmlParserAPIs</artifactId>
+	  </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>jfree</groupId>
+      <artifactId>jcommon</artifactId>
+      <version>[1.0.0,)</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>gnujaxp</artifactId>
+          <groupId>gnujaxp</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>[1.0.0,)</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>gnujaxp</artifactId>
+          <groupId>gnujaxp</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <!--
+    <dependency>
+       <groupId>geronimo-spec</groupId>
+       <artifactId>geronimo-spec-activation</artifactId>
+       <version>1.0.2-rc4</version>
+    </dependency>	
+    <dependency>
+       <groupId>geronimo-spec</groupId>
+       <artifactId>geronimo-spec-javamail</artifactId>
+       <version>1.3.1-rc5</version>
+    </dependency>
+    -->
+    
+    <dependency>
+      <groupId>javax.media.jmf</groupId>
+      <artifactId>jai_codec</artifactId>
+      <version>1.1_mr</version>
+    </dependency>
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+      <exclusions>
+	<!-- exclude XML APIs -->
+	  <exclusion>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	  </exclusion>
+	  <exclusion>
+	    <groupId>xerces</groupId>
+	    <artifactId>xmlParserAPIs</artifactId>
+	  </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.xmlgraphics</groupId>
+      <artifactId>fop</artifactId>
+      <version>0.95</version>
+      <exclusions>
+	  <exclusion>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	  </exclusion>
+	  <exclusion>
+	    <groupId>xerces</groupId>
+	    <artifactId>xmlParserAPIs</artifactId>
+	  </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.avalon.framework</groupId>
+      <artifactId>avalon-framework-impl</artifactId>
+      <version>4.3.1</version>
+    </dependency> 
+    <dependency>
+      <groupId>axis.axis-saaj</groupId>
+      <artifactId>saaj-ri</artifactId>
+      <version>1.1_02</version>
+    </dependency>
+
+  </dependencies>
+  <properties>
+    <ji-mondrian-version>3.2.0-13661</ji-mondrian-version>
+    <ji-jpivot-version>6.1.0</ji-jpivot-version>
+    <ji-wcf-version>6.1.0</ji-wcf-version>
+  </properties>
+</project>

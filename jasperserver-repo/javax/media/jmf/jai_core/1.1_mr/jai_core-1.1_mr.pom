@@ -1,0 +1,18 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.media.jmf</groupId>
+  <artifactId>jai_core</artifactId>
+  <version>1.1_mr</version>
+  <name>Java Media Framework</name>
+  <!--
+  <description>
+  The Java Media Framework API (JMF) enables audio, video and other time-based 
+  media to be added to applications and applets built on Java technology.
+	This optional package, which can capture, playback, stream, and transcode
+	multiple media formats, extends the Java 2 Platform, Standard Edition (J2SE)
+	for multimedia developers by providing a powerful toolkit to develop scalable,
+	cross-platform technology.
+  </description>
+  <url>http://java.sun.com/products/java-media/jmf/</url>
+  -->
+</project>

@@ -1,0 +1,1 @@
+define(["require","wcf.scroll","jpivot.jaPro"],function(o){o("wcf.scroll"),o("jpivot.jaPro")});

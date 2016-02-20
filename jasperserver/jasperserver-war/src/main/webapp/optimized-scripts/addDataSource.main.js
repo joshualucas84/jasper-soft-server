@@ -1,0 +1,1 @@
+define(["require","!domReady","underscore","jrs.configs","resource.base","dataSource/factory/dataSourceViewFactory"],function(e){"use strict";var r=e("!domReady"),a=e("underscore"),o=e("jrs.configs"),c=e("resource.base"),s=e("dataSource/factory/dataSourceViewFactory");r(function(){var e=o.addDataSource.initOptions;a.extend(c.messages,o.addDataSource.resource.messages),s(e)})});

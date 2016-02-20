@@ -1,0 +1,362 @@
+<div class="outputTab">
+
+	<div class="outputFileOptions section">
+
+		<!-- not sure what the fieldset below is for -->
+		<!-- <fieldset class="row instructions">
+			<legend class="offLeft"><span>Instructions</span></legend>
+		</fieldset> -->
+
+		<h4 class="title">
+			{{- i18n["report.scheduling.job.edit.output.label"] }}
+		</h4>
+
+		<!-- start name and description -->
+		<fieldset id="outputFileName" class="group first" title="{{- i18n["report.scheduling.job.edit.parameters.tooltip.baseFileName"] }}">
+			<label class="control input text">
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.output.filename"] }} ({{- i18n["required.field"] }}):
+				</span>
+				<input name="baseOutputFilename" type="text" value="" maxlength="200">
+				<span data-field="baseOutputFilename" class="message warning"></span>
+			</label>
+		</fieldset>
+		<fieldset id="outputDescription" class="group">
+			<label class="control textArea">
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.label.description"] }}:
+				</span>
+				<textarea name="outputDescription"></textarea>
+				<span data-field="outputDescription" class="message warning"></span>
+			</label>
+		</fieldset>
+		<!-- end name and description -->
+
+		<!-- start time zone -->
+		<fieldset id="timeZone" class="group">
+			<label class="control select inline twoLine">
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.output.label.timezone"] }}:
+				</span>
+				<select name="timeZone">
+					{{
+						_.each(timeZones, function(zone) {
+						}}
+							<option value="{{- zone.value }}">
+								{{- zone.title }}
+							</option>
+						{{
+						});
+					}}
+				</select>
+			</label>
+		</fieldset>
+		<!-- end time zone -->
+
+		<!-- start output locale -->
+		<fieldset id="outputLocale" class="group">
+			<label class="control select inline twoLine">
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.output.label.locale"] }}:
+				</span>
+				<select name="outputLocale">
+					<option value="" selected="">({{- i18n["report.scheduling.job.edit.output.locale.default"] }})</option>
+					<option value="en">en - English</option>
+					<option value="fr">fr - French</option>
+					<option value="it">it - Italian</option>
+					<option value="es">es - Spanish</option>
+					<option value="de">de - German</option>
+					<option value="ro">ro - Romanian</option>
+					<option value="ja">ja - Japanese</option>
+					<option value="zh_TW">zh_TW - Chinese (Taiwan)</option>
+					<option value="zh_CN">zh_CN - Chinese (China)</option>
+				</select>
+			</label>
+		</fieldset>
+		<!-- end output locale -->
+
+		<!-- start formats -->
+		<fieldset id="outputFormat" class="group">
+			<input id="outputFormats" type="hidden">
+			<legend>
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.output.label.outputFormat"] }}:
+				</span>
+			</legend>
+			<ul class="list inputSet">
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_5" title="{{- i18n["report.output.csv.label.tooltip"] }}">
+							{{- i18n["report.output.csv.label"] }}
+						</label>
+						<input id="scheduler_box_5" name="outputFormats" value="CSV" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_2" title="{{- i18n["report.output.html.label.tooltip"] }}">
+							{{- i18n["report.output.html.label"] }}
+						</label>
+						<input id="scheduler_box_2" name="outputFormats" value="HTML" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_4" title="{{- i18n["report.output.rtf.label.tooltip"] }}">
+							{{- i18n["report.output.rtf.label"] }}
+						</label>
+						<input id="scheduler_box_4" name="outputFormats" value="RTF" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_8" title="{{- i18n["report.output.docx.label.tooltip"] }}">
+							{{- i18n["report.output.docx.label"] }}
+						</label>
+						<input id="scheduler_box_8" name="outputFormats" value="DOCX" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_9" title="{{- i18n["report.output.ods.label.tooltip"] }}">
+							{{- i18n["report.output.ods.label"] }}
+						</label>
+						<input id="scheduler_box_9" name="outputFormats" value="ODS" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_12" title="{{- i18n["report.output.xlsx.nopag.label.tooltip"] }}">
+							{{- i18n["report.output.xlsx.nopag.label"] }}
+						</label>
+						<input id="scheduler_box_12" name="outputFormats" value="XLSX_NOPAG" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_11" title="{{- i18n["report.output.xls.nopag.label.tooltip"] }}">
+							{{- i18n["report.output.xls.nopag.label"] }}
+						</label>
+						<input id="scheduler_box_11" name="outputFormats" value="XLS_NOPAG" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_6" title="{{- i18n["report.output.odt.label.tooltip"] }}">
+							{{- i18n["report.output.odt.label"] }}
+						</label>
+						<input id="scheduler_box_6" name="outputFormats" value="ODT" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_10" title="{{- i18n["report.output.xlsx.label.tooltip"] }}">
+							{{- i18n["report.output.xlsx.label"] }}
+						</label>
+						<input id="scheduler_box_10" name="outputFormats" value="XLSX" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_3" title="{{- i18n["report.output.xls.label.tooltip"] }}">
+							{{- i18n["report.output.xls.label"] }}
+						</label>
+						<input id="scheduler_box_3" name="outputFormats" value="XLS" type="checkbox">
+					</div>
+				</li>
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_1" title="{{- i18n["report.output.pdf.label.tooltip"] }}">
+							{{- i18n["report.output.pdf.label"] }}
+						</label>
+						<input id="scheduler_box_1" name="outputFormats" value="PDF" type="checkbox">
+					</div>
+				</li>
+
+
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_box_14" title="{{- i18n["report.output.pptx.label.tooltip"] }}">
+							{{- i18n["report.output.pptx.label"] }}
+						</label>
+						<input id="scheduler_box_14" name="outputFormats" value="PPTX" type="checkbox">
+					</div>
+				</li>
+
+			</ul>
+
+			<span data-field="outputFormats" class="message warning"></span>
+		</fieldset>
+		<!-- end formats -->
+
+		<!-- start file handling -->
+		<fieldset id="fileHandling" class="group">
+			<legend class="">
+				<span class="wrap">
+					{{- i18n["report.scheduling.job.edit.file.handling"] }}:
+				</span>
+			</legend>
+			<ul class="list inputSet">
+				<li class="leaf">
+					<div class="control checkBox">
+						<label class="wrap" for="scheduler_overwriteFiles">
+							{{- i18n["report.scheduling.job.edit.repository.label.overwriteFiles"] }}
+						</label>
+						<input id="scheduler_overwriteFiles" type="checkbox" name="overwriteFiles" value="overwrite">
+					</div>
+				</li>
+				<li class="leaf">
+					<div class="control checkBox twoLine">
+						<label class="wrap" for="scheduler_sequentialFilenames">
+							{{- i18n["report.scheduling.job.edit.file.handling.sequential"] }}
+						</label>
+						<span class="wrap">
+							{{- i18n["report.scheduling.job.edit.repository.label.timestampPattern"] }}:
+						</span>
+						<input id="scheduler_sequentialFilenames" type="checkbox" name="sequentialFilenames" value="sequential">
+						<label class="control inline twoLine" title="{{- i18n["report.scheduling.job.edit.parameters.tooltip.timestamp.pattern.sequential"] }}">
+							<input name="timestampPattern" type="text" maxlength="100" title="{{- i18n["report.scheduling.job.edit.parameters.tooltip.timestamp.pattern.simple.data"] }}">
+							<span data-field="timestampPattern" class="message warning"></span>
+						</label>
+					</div>
+				</li>
+			</ul>
+		</fieldset>
+		<!-- end file handling -->
+	</div>
+
+	<!-- start output destinations -->
+	<div class="outputDestination section">
+		<h4 class="title">
+			{{- i18n["report.scheduling.job.edit.destination"] }}
+		</h4>
+		<ul class="list group first inputSet">
+
+			<li id="repositoryOutput" class="leaf">
+				<div class="control checkBox">
+					<label class="control browser" for="scheduler_outputToRepository">
+						<span class="wrap">
+							{{- i18n["report.scheduling.job.edit.destination.repository"] }}
+						</span>
+					</label>
+					<input id="scheduler_outputToRepository" type="checkbox" name="outputToRepository">
+				</div>
+				<div class="control browser">
+					<input type="text" name="outputRepository">
+					<button name="outputRepositoryButton" class="button action" type="button">
+						<span class="wrap">
+							{{- i18n["report.scheduling.job.edit.destination.browse"] }}
+							<span class="icon"></span>
+						</span>
+					</button>
+					<span data-field="outputRepository" class="message warning"></span>
+				</div>
+			</li>
+
+			<li id="fileSystemOutput" class="leaf">
+				<div class="control checkBox">
+					<label class="control browser" for="scheduler_outputToHostFileSystem">
+						<span class="wrap">
+							{{- i18n["report.scheduling.job.edit.destination.fs"] }}
+						</span>
+					</label>
+					<input id="scheduler_outputToHostFileSystem" type="checkbox" name="outputToHostFileSystem">
+				</div>
+				<div class="control browser">
+					<input type="text" name="outputHostFileSystem" />
+					<span data-field="outputHostFileSystem" disabled="" class="message warning"></span>
+				</div>
+			</li>
+
+			<li id="ftpServerOutput" class="leaf">
+				<ul class="list">
+					<li class="leaf">
+						<div class="control checkBox">
+							<label class="control browser" for="scheduler_outputToFTPServer">
+								<span class="wrap">
+									{{- i18n["report.scheduling.job.edit.destination.ftp"] }}
+								</span>
+							</label>
+							<input id="scheduler_outputToFTPServer" type="checkbox"
+							       name="outputToFTPServer">
+						</div>
+						<div class="control text">
+							<label class="control input text" for="ftpAddress">
+								<span class="wrap">
+									{{- i18n["report.scheduling.job.edit.destination.ftp.server"] }}
+								</span>
+								<input id="ftpAddress" type="text" name="ftpAddress">
+								<span data-field="ftpAddress" class="message warning"></span>
+							</label>
+						</div>
+						<div class="control text">
+							<label class="control input text" for="ftpDirectory">
+								<span class="wrap">
+									{{- i18n["report.scheduling.job.edit.destination.ftp.dir"] }}
+								</span>
+								<input id="ftpDirectory" type="text" name="ftpDirectory">
+								<span data-field="ftpDirectory" class="message warning"></span>
+							</label>
+						</div>
+						<div class="control text">
+							<label class="control input text" for="ftpUsername">
+								<span class="wrap"></span>
+								{{- i18n["report.scheduling.job.edit.destination.ftp.user"] }}
+								<input id="ftpUsername" type="text" name="ftpUsername">
+								<span data-field="ftpUsername" class="message warning"></span>
+							</label>
+						</div>
+						<div class="control text">
+							<label class="control input text" for="ftpPassword">
+								{{- i18n["report.scheduling.job.edit.destination.ftp.password"] }}
+								<span class="wrap">
+									<input type="password" id="ftpPassword" name="ftpPassword">
+								</span>
+								<span data-field="ftpPassword" class="message warning"></span>
+							</label>
+						</div>
+					</li>
+					<li class="leaf">
+						<div class="control checkBox">
+							<label for="scheduler_useFTPS">
+								<span class="wrap">
+									{{- i18n["report.scheduling.job.edit.destination.ftp.useftps"] }}
+								</span>
+							</label>
+							<input id="scheduler_useFTPS" type="checkbox" name="useFTPS">
+						</div>
+						<div class="control text">
+							<label class="control input text">
+								<span class="wrap">
+									{{- i18n["report.scheduling.job.edit.destination.ftp.port"] }}
+								</span>
+								<input type="text" name="ftpPort">
+								<span data-field="ftpPort" class="message warning"></span>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<fieldset id="testConnection" class="group inputSet">
+			<button name="ftpTestButton" id="ftpTestButton" class="button action ftp-test" type="button">
+	            <span class="wrap">
+		            {{- i18n["report.scheduling.job.edit.destination.ftp.test"] }}
+	                <span class="icon"></span>
+	            </span>
+			</button>
+			<span data-field="ftpTest" class="message warning"></span>
+		</fieldset>
+	</div>
+</div>

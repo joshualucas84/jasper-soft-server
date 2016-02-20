@@ -1,0 +1,165 @@
+/* ================================
+ * SMACSS POC STYLE SHEET, MODULES 
+ *
+ * typographic scale is 1.8      
+ * ================================ */
+
+/* ------------- */
+/*  ICON MODULE  */
+/* ------------- */
+.m-Icon.jrs {
+	background-repeat: no-repeat;
+	display: inline-block;
+	*display: inline; /* IE7 */
+	position: relative;
+	zoom: 1; /* IE */
+	}
+
+
+/* ---------------- */
+/*  INPUT CONTROLS  */
+/* ---------------- */
+
+.m-Control.jrs {}
+
+.m-Control-label.jrs {
+	display: block;
+	line-height: 1.909;		/* 21px / 11px, unitless value */
+	
+	color: #666666;
+	font-weight: bold;
+	}
+	
+.m-Control-text.jrs {
+	width: 100%;
+	}
+
+.m-Control-textarea.jrs {
+	height: 5.818em;		/* 64px / 11px */
+	width: 100%;
+	}
+	
+.m-Control-picker.jrs { 
+	width/*\**/: 90% \9; 	/* IE8 */
+	width: calc(100% - 2.182em);  /* 24px / 11px */
+	white-space: normal;
+}
+
+.m-Control-pickertrigger.jrs {
+	height:2.091em;		/* 23px / 11px, same height as input */
+	width:1.818em;		/* 20px / 11px */
+	}
+
+.m-Control-pickertrigger-icon.jrs {
+	background-image: url("../images/control_icons_sprite.png");
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    width: 1.818em;		/* 20px / 11px */
+    height: 1.818em;	/* 20px / 11px */
+	}
+
+.m-Control-checkset.jrs,
+.m-Control-radioset.jrs {
+	margin-left: .545em;	/* 6px / 11px */
+	margin-top: .273em;		/* 3px / 11px */
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	}
+
+.m-Control-checkitem.jrs,
+.m-Control-radioitem.jrs	{
+	padding-bottom: .455em;	/* 3px / 11px */
+	position: relative;
+	white-space: nowrap;
+	}
+	
+.m-Control-checkbox.jrs,
+.m-Control-radio.jrs,
+.m-Control-boolean.jrs {
+	line-height: 1.818em;	/* 20px / 11px */
+	margin-right: .182em;	/* 2px / 11px */
+	display: inline-block;
+	}
+	
+.m-Control-checklabel.jrs,
+.m-Control-radiolabel.jrs,
+.m-Control-booleanlabel.jrs  {
+	color: #666666;
+	display: inline-block;
+	vertical-align:top;
+	line-height: 1.364;		/* 15px / 11px, unitless value */
+	}
+	
+.m-Control-booleanlabel.jrs {
+	font-weight: bold;
+}
+	
+.m-Control-checklabel.foo.jrs { 
+	line-height: 1.364;			/* 15px / 11px, unitless value */
+	margin-bottom: .273em;		/* 3px / 11px */
+	max-width/*\**/: 90% \9; 	/* IE8 */
+	max-width: calc(100% - 1.727em);
+	white-space: normal;
+}
+
+.m-Control.control.jrs .jrs.selectionControl a {
+    color: #666666;
+    text-decoration: none;
+    cursor: pointer;
+}
+.m-Control.control.jrs .jrs.selectionControl a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------- */
+/*  CUSTOM INPUT CONTROLS  */
+/* ----------------------- */
+
+.m-Control-select {
+	background-clip: padding-box;
+	background-color: #ffffff;
+	color: #333333 ;
+	
+	/* following 3 are same as input styles in base.css */
+	height: 2.091em;
+	padding-left: 0.182em;
+	padding-right: 0.182em;
+	
+	overflow: hidden;
+	width:100%;
+	border:1px solid silver;
+	display: inline-block;
+
+
+	}
+
+
+
+/* --------------- */
+/*  ALERT MODULES  */
+/* --------------- */
+
+.m-Control-alert.jrs {
+    color: #FF0000;
+    display: block;
+    font-size:1em; 
+	line-height:1.364;		/* 15px / 11px, unitless value */
+	margin-top: .182em;		/* 2px / 11px */
+	}
+
+
+/* ----------------- */
+/*  RESIZER MODULES  */
+/* ----------------- */
+
+.m-sizer.jrs {}
+
+.m-sizerVertical.jrs {
+	cursor: row-resize;
+	height: .909em;			/* 10px / 11px */
+	margin-bottom: .909em;	/* 10px / 11px */
+	position: static;
+	width: 100%;
+	}
+

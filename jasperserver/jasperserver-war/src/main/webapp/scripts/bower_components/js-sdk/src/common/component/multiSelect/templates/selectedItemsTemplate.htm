@@ -1,0 +1,11 @@
+<!--
+this input only for technical purposes:
+it allows selected items list to get focus
+and have proper tab position
+(simple tabindex="0" on DOM element will broke tab index sequence)
+-->
+<input type="text" style="position: absolute; left: -9999px" {{ if (disabled) { }}disabled="disabled"{{ } }}>
+<!-- list position -->
+<div class="m-Multiselect-listContainer-message jrs j-no-selection" style="display:none">
+    {{- i18n['sic.multiselect.noSelection'] }}
+</div>

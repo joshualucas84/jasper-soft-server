@@ -1,0 +1,19 @@
+/* ==============================================================
+ * LAYOUT RULES 
+ *
+ * Layout rules are used to position elements on a page. Layout
+ * rules generally are applied to the ID selector of an element.
+ *   
+ * ============================================================== */
+
+.l-wrapper.jrs {
+	position: relative;
+	}
+
+/* ----------------------- */
+/*  INPUT CONTROL LAYOUTS  */
+/* ----------------------- */
+
+.l-input.jrs {
+	margin: 0 0 1.455em 1.455em;	/* 16px / 11px */
+	}

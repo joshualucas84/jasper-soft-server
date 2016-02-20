@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<joined-subclass 
+			name="com.jaspersoft.jasperserver.api.metadata.common.service.impl.hibernate.persistent.RepoFileResource"
+			extends="com.jaspersoft.jasperserver.api.metadata.common.service.impl.hibernate.persistent.RepoResource"
+			table="JIFileResource">
+		<key column="id"/>
+		<property name="data" type="com.jaspersoft.hibernate.ByteWrappingBlobType" length="20971520" column="data" lazy="true"/>
+		<property name="fileType" length="20" type="string" column="file_type"/>
+		<many-to-one column="reference" name="reference" class="com.jaspersoft.jasperserver.api.metadata.common.service.impl.hibernate.persistent.RepoFileResource"/>
+	</joined-subclass>
+
+<!-- create index JIFileResource_reference_index on JIFileResource (reference); -->
+<database-object>
+	<create>create index JIFileResource_reference_index on JIFileResource (reference)</create>
+	<drop>DROP INDEX JIFileResource_reference_index ON JIFileResource</drop>
+</database-object>
+</hibernate-mapping>

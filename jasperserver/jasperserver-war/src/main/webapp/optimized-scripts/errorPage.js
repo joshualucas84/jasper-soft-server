@@ -1,0 +1,1 @@
+define(["require","jquery","commons.main"],function(e){"use strict";var r=e("jquery");e("commons.main"),r("#closeErrorPage").on("click",function(){r(document).trigger("errorPage:close",{})})});

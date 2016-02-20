@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="JIObjectPermission" name="com.jaspersoft.jasperserver.api.metadata.user.domain.impl.hibernate.RepoObjectPermission">
+    <id name="id" type="long" >
+      <generator class="native"/>
+    </id>
+    <property column="uri" name="URI" type="string" length="1000" not-null="true"/>
+    <any name="permissionRecipient" id-type="long">
+      <column name="recipientobjectclass" length="250"/>
+      <column name="recipientobjectid"/>
+    </any>
+    <property name="permissionMask" not-null="true" type="integer" column="permissionMask"/>
+  </class>
+
+<!-- Create uri_index for uri column on JIObjectPermission table. Databases specific -->
+<!-- Drop uri_index on JIObjectPermission table. Databases specific -->
+<database-object>
+    <definition class="com.jaspersoft.hibernate.auxilarydatabaseobject.JIObjectPermissionCreateUriIndex"/>
+</database-object>
+
+<!-- create index JIObjectPermission_recipientobjectclass_index on JIObjectPermission (recipientobjectclass); -->
+<!-- replacing JIObjectPermission_recipientobjectclass_index with idx21_recipientobjclass_idx -->
+<database-object>
+	<create>create index idx21_recipientobjclass_idx on JIObjectPermission (recipientobjectclass)</create>
+	<drop>DROP INDEX idx21_recipientobjclass_idx ON JIObjectPermission</drop>
+</database-object>
+
+<!-- create index JIObjectPermission_recipientobjectid_index on JIObjectPermission (recipientobjectid); -->
+<!-- replacing JIObjectPermission_recipientobjectid_index with idx22_recipientobjid_idx -->
+<database-object>
+	<create>create index idx22_recipientobjid_idx on JIObjectPermission (recipientobjectid)</create>
+	<drop>DROP INDEX idx22_recipientobjid_idx ON JIObjectPermission</drop>
+</database-object>
+
+</hibernate-mapping>

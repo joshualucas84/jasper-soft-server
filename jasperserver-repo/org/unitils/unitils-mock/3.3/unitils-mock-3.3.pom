@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>unitils</artifactId>
+    <groupId>org.unitils</groupId>
+    <version>3.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>unitils-mock</artifactId>
+  <name>Unitils mock module</name>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <artifactSet>
+            <includes>
+              <include>cglib:cglib</include>
+              <include>asm:asm</include>
+              <include>asm:asm-analysis</include>
+              <include>asm:asm-tree</include>
+              <include>org.objenesis:objenesis</include>
+            </includes>
+          </artifactSet>
+          <relocations>
+            <relocation>
+              <pattern>net.sf.cglib</pattern>
+              <shadedPattern>thirdparty.net.sf.cglib</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.objectweb</pattern>
+              <shadedPattern>thirdparty.org.objectweb</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.objenesis</pattern>
+              <shadedPattern>thirdparty.org.objenesis</shadedPattern>
+            </relocation>
+          </relocations>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.unitils</groupId>
+      <artifactId>unitils-core</artifactId>
+      <version>3.3</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
+

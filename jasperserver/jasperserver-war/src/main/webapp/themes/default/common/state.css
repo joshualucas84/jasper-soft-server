@@ -1,0 +1,92 @@
+/* ----------------- */
+/*   GLOBAL STATES   */
+/* ----------------- */ 
+
+.is-disabled {
+    opacity: 0.4;
+}
+
+
+
+
+/* ------------------------ */
+/*   INPUT CONTROL STATES   */
+/* ------------------------ */
+
+.m-Control-selectoption.jrs.is-selected {
+    background-color: #217EB5;
+    color: #ffffff;
+    }
+
+.m-ControlSelect.jrs.is-collapsed > .m-ControlSelect-searchwrapper.jrs {
+    display: none;
+    }
+
+.m-ControlSelect.jrs.is-expanded .m-ControlSelect-inputicon.jrs {
+    display: none;
+    }
+
+.m-ControlSelect.jrs.is-expanded .m-ControlSelect-inputwrapper.jrs {
+    border-bottom: 1px solid #e5e5e5;
+    }
+    
+/* select lists */
+.m-ListSelectMultiSelected.jrs .m-List-item.jrs.is-selected .m-List-item-delete.jrs {
+    background-position: 8px -744px
+    }
+    
+.m-ListSelectMulti.jrs .m-List-item.jrs.is-selected {
+    background-image: url("../images/control_icons_sprite_vertical.png");
+    background-repeat: no-repeat;
+    background-position:right -834px;
+    padding-right:2.182em;        /* 24px / 11px */
+}
+
+
+
+/* multiselect toggle tabs */
+.m-Multiselect-toggle.jrs.is-active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    height: 26px;
+    line-height: 24px;
+    top: 1px;
+    /*z-index: 9999;*/
+}
+
+.m-Multiselect-toggle.jrs.is-inactive {
+    background-color: #ebebea;
+    height: 20px;
+    line-height: 18px;
+    /*z-index: 9999;*/
+}
+
+/*  ipad styles */
+.ipad .m-Multiselect-toggle.jrs.is-active {
+    height: 36px;
+    line-height: 34px;
+}
+.ipad .m-Multiselect-toggle.jrs.is-inactive {
+    height: 28px;
+    line-height: 26px;
+}
+
+
+
+/* select lists */
+.m-Selectlist-item.is-selected.jrs { /* selected item background and text color for item */
+    background-color: #1388d8;
+    color: #fff;
+    }
+    
+.m-Selectlist-item.is-hovered.jrs { /* hover background color for item */
+    background-color: #e5e5e5;
+    }
+    
+.m-Selectlist-item.is-selected.is-hovered.jrs {    /* active + selected item bgcolor for item and delete button */
+    background-color: #0f67a9;
+}
+
+.m-SelectlistSelected.jrs > .m-Selectlist-item.is-selected.jrs { /* selected item bgcolor for selected items list of multiselect */
+    background-color: #0f67a9;
+}
